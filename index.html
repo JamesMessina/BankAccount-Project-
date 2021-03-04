@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account</title>
+</head>
+<body>
+  <h1 style="text-decoration: underline;">Bank Account Home</h1><br>
+  <label for="currentAccount" style="font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-decoration: underline;">Current Account:</label>
+  <h2 id="currentAccount"></h2><br>
+  <label for="name">Name:</label>
+  <input type="text" id="name" value=""><br><br>
+  <label for="accountnumber">Account Number:</label>
+  <input type="text" id="accountnumber" value=""><br><br>
+  <label for="balance">Current Balance:</label>
+  <input type="number" id="balance" value=""><br><br>
+  <h3 style="font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-decoration: underline;">New Transaction:</h3><br>
+  <input type="radio" name="transType" id="debit">
+  <label for="debit">Debit</label>
+  <input type="radio" name="transType" id="credit">
+  <label for="credit">Credit</label><br><br>
+  <label for="date">Date:</label>
+  <input type="date" id="date"><br><br>
+  <label for="amount">Amount:</label>
+  <input type="number" id="amount" value=""><br><br>
+  <label for="payee">Payee/Description:</label>
+  <input type="text" id="payee" value=""><br><br>
+  <button type="submit" onclick="logTransaction()">Submit</button><br><br>
+  <h3 style="font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-decoration: underline;">History:</h3><br>
+  <ul id="transList">
+    
+  </ul>
+  <script src="./main.js"></script>
+</body>
+</html>
